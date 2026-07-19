@@ -28,7 +28,7 @@
 
 /* Заголовок */
 #allrecords .tlk-form__title {
-  margin: 0 0 34px;
+  margin: 0 0 30px;
   color: #2a2726;
   font-size: 30px;
   font-weight: 400;
@@ -82,7 +82,24 @@
 }
 
 #allrecords .tlk-form__wrap .tlk-form__item + .tlk-form__item {
-  margin-top: 30px;
+  margin-top: 16px;
+}
+
+/* Заголовки и пояснения во всех формах */
+#allrecords .tlk-form__descr,
+#allrecords .tlk-form__sup-text,
+#allrecords .tlk-form__sub-text,
+#allrecords .tlk-form__one-code,
+#allrecords .tlk-form__one-code-descr {
+  width: 100%;
+  text-align: center;
+}
+
+#allrecords .tlk-form__title + .tlk-form__descr {
+  margin: -10px 0 24px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 /* Название поля */
@@ -196,7 +213,7 @@
 /* Экран ввода одноразового кода */
 #allrecords .tlk-form__one-code {
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 #allrecords .tlk-form__one-code-descr {
@@ -204,10 +221,19 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
+  text-align: center;
 }
 
 #allrecords .tlk-form__one-code-form {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+/* Иконка показа пароля по центру высокого поля */
+#allrecords .tlk-password-toggle {
+  top: 50%;
+  right: 16px;
+  bottom: auto;
+  transform: translateY(-50%);
 }
 
 #allrecords .tlk-form__one-code-form .tlk-input {
@@ -278,7 +304,13 @@
   }
 
   #allrecords .tlk-form__wrap .tlk-form__item + .tlk-form__item {
-    margin-top: 24px;
+    margin-top: 14px;
+  }
+
+  #allrecords .tlk-form__title + .tlk-form__descr {
+    margin-top: -8px;
+    margin-bottom: 20px;
+    font-size: 12px;
   }
 
   #allrecords .tlk-form__item .tlk-input-title {
