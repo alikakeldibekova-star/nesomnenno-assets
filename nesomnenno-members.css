@@ -1,0 +1,335 @@
+/* =========================================================
+   NESOMNENNO — СТРАНИЦА ВХОДА / РЕГИСТРАЦИИ
+   ========================================================= */
+
+/* Общая область страницы */
+#allrecords .tlk-form {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Внешний контейнер формы */
+#allrecords .tlk-form__container-wrap {
+  box-sizing: border-box;
+  width: 606px;
+  max-width: 606px;
+  padding: 64px 45px 48px;
+  background-color: #faf9f3;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Убираем стандартное ограничение Tilda в 340px */
+#allrecords .tlk-form__container {
+  width: 100%;
+  max-width: none;
+}
+
+/* Заголовок */
+#allrecords .tlk-form__title {
+  margin: 0 0 34px;
+  color: #2a2726;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Переключатель «По почте / По телефону» */
+#allrecords .tlk-form__item_radio {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 65px;
+  padding: 6px;
+  gap: 0;
+  background-color: #efeee9;
+  border: 0;
+  border-radius: 0;
+}
+
+#allrecords .tlk-form__item_radio-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  color: #2a2726;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+#allrecords .tlk-form__item_radio-option__active {
+  background-color: #faf9f3;
+  pointer-events: none;
+}
+
+#allrecords .tlk-form__item_radio-option:not(.tlk-form__item_radio-option__active) {
+  opacity: 1;
+}
+
+/* Расстояние от переключателя до поля */
+#allrecords .tlk-form__wrap {
+  padding-bottom: 0;
+}
+
+#allrecords .tlk-form__wrap .tlk-form__item + .tlk-form__item {
+  margin-top: 64px;
+}
+
+/* Название поля */
+#allrecords .tlk-form__item .tlk-input-title {
+  display: flex;
+  margin: 0 0 10px;
+  color: #2a2726;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+/* Поле email */
+#allrecords .tlk-form__item .tlk-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 65px;
+  padding: 0 16px;
+  color: #2a2726;
+  background-color: #faf9f3;
+  border: 1px solid #c8c6bc;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+#allrecords .tlk-form__item .tlk-input::placeholder {
+  color: #aaa7a0;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+#allrecords .tlk-form__item .tlk-input:hover {
+  border-color: #918e88;
+}
+
+#allrecords .tlk-form__item .tlk-input:focus {
+  background-color: #faf9f3;
+  border-color: #2a2726;
+}
+
+/* Поле телефона */
+#allrecords .tlk-form__item .t-input-phonemask__wrap {
+  box-sizing: border-box;
+  width: 100%;
+  height: 65px;
+  padding: 0;
+  background-color: #faf9f3;
+  border: 1px solid #c8c6bc;
+  border-radius: 0;
+}
+
+#allrecords .tlk-form__item .t-input-phonemask {
+  box-sizing: border-box;
+  height: 63px;
+  padding: 0 16px;
+  color: #2a2726;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Кнопка */
+#allrecords .tlk-form__submit-wrap {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#allrecords .tlk-form__submit-btn {
+  display: block;
+  width: 100%;
+  height: 65px;
+  min-width: 0;
+}
+
+#allrecords .tlk-form__submit-btn .tlk-btn {
+  box-sizing: border-box;
+  width: 100%;
+  height: 65px;
+  padding: 0 20px;
+  color: #f3f2f0;
+  background-color: #2a2726;
+  border: 1px solid #2a2726;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+#allrecords .tlk-form__submit-btn .tlk-btn:hover {
+  color: #f3f2f0;
+  background-color: #4d4745;
+  border-color: #4d4745;
+}
+
+#allrecords .tlk-form__submit-btn .tlk-btn:focus-visible {
+  outline: 1px solid #2a2726;
+  outline-offset: 3px;
+}
+
+/* Экран ввода одноразового кода */
+#allrecords .tlk-form__one-code {
+  width: 100%;
+  text-align: left;
+}
+
+#allrecords .tlk-form__one-code-descr {
+  color: #2a2726;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+#allrecords .tlk-form__one-code-form {
+  margin-top: 30px;
+}
+
+#allrecords .tlk-form__one-code-form .tlk-input {
+  box-sizing: border-box;
+  height: 65px;
+  padding: 0 120px 0 16px;
+  color: #2a2726;
+  background-color: #faf9f3;
+  border: 1px solid #c8c6bc;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+#allrecords .tlk-form__one-code-edit {
+  color: #918e88;
+  font-size: 14px;
+}
+
+#allrecords .tlk-form__button-back {
+  margin: 0 0 24px;
+  padding: 0;
+  color: #918e88;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Ошибки */
+#allrecords .tlk-input-error {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+#allrecords .tlk-input-error_all {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* Мобильная версия */
+@media screen and (max-width: 639px) {
+  #allrecords .tlk-form {
+    min-height: 100vh;
+    padding: 10px;
+  }
+
+  #allrecords .tlk-form__container-wrap {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 20px 30px;
+  }
+
+  #allrecords .tlk-form__title {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 1.1;
+    white-space: normal;
+  }
+
+  #allrecords .tlk-form__item_radio {
+    height: 50px;
+    padding: 5px;
+  }
+
+  #allrecords .tlk-form__item_radio-option {
+    font-size: 12px;
+  }
+
+  #allrecords .tlk-form__wrap .tlk-form__item + .tlk-form__item {
+    margin-top: 40px;
+  }
+
+  #allrecords .tlk-form__item .tlk-input-title {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+
+  #allrecords .tlk-form__item .tlk-input,
+  #allrecords .tlk-form__item .t-input-phonemask__wrap {
+    height: 52px;
+  }
+
+  #allrecords .tlk-form__item .t-input-phonemask {
+    height: 50px;
+  }
+
+  #allrecords .tlk-form__item .tlk-input,
+  #allrecords .tlk-form__item .tlk-input::placeholder,
+  #allrecords .tlk-form__item .t-input-phonemask {
+    font-size: 12px;
+  }
+
+  #allrecords .tlk-form__submit-btn,
+  #allrecords .tlk-form__submit-btn .tlk-btn {
+    height: 52px;
+  }
+
+  #allrecords .tlk-form__submit-btn .tlk-btn {
+    font-size: 12px;
+  }
+
+  #allrecords .tlk-form__one-code-descr,
+  #allrecords .tlk-form__one-code-edit,
+  #allrecords .tlk-form__button-back {
+    font-size: 12px;
+  }
+
+  #allrecords .tlk-form__one-code-form .tlk-input {
+    height: 52px;
+    padding-left: 14px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  #allrecords .tlk-form__container-wrap {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #allrecords .tlk-form__title {
+    font-size: 20px;
+  }
+}
