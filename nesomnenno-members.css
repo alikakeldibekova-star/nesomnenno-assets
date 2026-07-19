@@ -34,7 +34,7 @@
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -47,7 +47,7 @@
   height: 65px;
   padding: 6px;
   gap: 0;
-  background-color: #efeee9;
+  background-color: #e9e8e1;
   border: 0;
   border-radius: 0;
 }
@@ -82,7 +82,7 @@
 }
 
 #allrecords .tlk-form__wrap .tlk-form__item + .tlk-form__item {
-  margin-top: 64px;
+  margin-top: 30px;
 }
 
 /* Название поля */
@@ -136,7 +136,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 65px;
-  padding: 0;
+  padding: 0 16px;
   background-color: #faf9f3;
   border: 1px solid #c8c6bc;
   border-radius: 0;
@@ -278,7 +278,7 @@
   }
 
   #allrecords .tlk-form__wrap .tlk-form__item + .tlk-form__item {
-    margin-top: 40px;
+    margin-top: 24px;
   }
 
   #allrecords .tlk-form__item .tlk-input-title {
